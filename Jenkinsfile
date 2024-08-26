@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // GitHub 저장소에서 코드 체크아웃
-                git 'https://github.com/yourusername/your-repo.git'
+                git 'https://github.com/windmoter/springboot-swagger3.0.git'
             }
         }
 
