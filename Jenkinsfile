@@ -2,21 +2,21 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
+        stage('Checkout---') {
             steps {
                 // GitHub 저장소에서 코드 체크아웃
                 git 'https://github.com/windmoter/springboot-swagger3.0.git'
             }
         }
 
-        stage('Build') {
+        stage('Build---') {
             steps {
                 // Maven을 사용하여 빌드
                 sh 'mvn clean package'
             }
         }
 
-        stage('Test') {
+        stage('Test---') {
             steps {
                 // Maven을 사용하여 테스트 실행
                 sh 'mvn test'
